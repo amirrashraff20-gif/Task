@@ -1,0 +1,5 @@
+export enum EngineState {
+  RUNNING = 'RUNNING',
+  SHUTTING_DOWN = 'SHUTTING_DOWN',
+  TERMINATED = 'TERMINATED'
+}
