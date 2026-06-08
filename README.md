@@ -10,6 +10,21 @@ A production-grade, high-throughput, concurrency-bounded event processing engine
 5. **Poison Event Isolation**: Individual failing events retry using an exponential backoff simulator, without starving healthy partitions. Repeated failures are dead-lettered.
 6. **Runtime Reconfiguration**: Real-time adjustment of concurrency limits without downtime or state loss.
 
+## Production Grade Enhancements
+
+In addition to the core requirements, this engine incorporates the following enterprise-grade capabilities:
+- **AbortController cancellation**
+- **Handler timeout support**
+- **Dynamic runtime reconfiguration**
+- **Structured logging**
+- **Health monitoring**
+- **P50/P95/P99 latency tracking**
+- **Throughput metrics**
+- **Top-K hot partitions detection**
+- **Memory leak prevention**
+- **Observability hooks**
+- **Graceful forced shutdown with cancellation**
+
 ## Architecture Q&A
 
 ### Question 1: How do R1 (Global Concurrency) and R2 (FIFO) coexist?
